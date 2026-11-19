@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jotbit: Jot down tasks, organize priorities, and track habits.</title>
+  <meta name="description" content="Jotbit puts a week planner, a to-do list and a habit tracker on one simple board. Plan your day in 30 minute slots. Download Jotbit for Mac.">
+  <link rel="canonical" href="https://jotbit-labs.github.io/">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#f0f2f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b141a" media="(prefers-color-scheme: dark)">
+  <meta name="application-name" content="Jotbit">
+  <meta name="apple-mobile-web-app-title" content="Jotbit">
+
+  <!-- Icons: SVG for browsers, PNG for Google results, Apple icon for home screens. -->
+  <link rel="icon" href="assets/jotbit-logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/jotbit-favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/jotbit-apple-touch-icon.png">
+
+  <!-- Link previews (WhatsApp, LinkedIn, Slack, X, Facebook). -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jotbit">
+  <meta property="og:title" content="Jotbit: Jot down tasks, organize priorities, and track habits.">
+  <meta property="og:description" content="A week planner, a to-do list and a habit tracker on one simple board.">
+  <meta property="og:url" content="https://jotbit-labs.github.io/">
+  <meta property="og:image" content="https://jotbit-labs.github.io/assets/jotbit-social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jotbit logo and slogan next to the Jotbit board">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tells search engines the site is called "Jotbit" and who makes it. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://jotbit-labs.github.io/#website",
+        "name": "Jotbit",
+        "alternateName": ["Jotbit app", "Jotbit Labs"],
+        "url": "https://jotbit-labs.github.io/",
+        "publisher": { "@id": "https://jotbit-labs.github.io/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://jotbit-labs.github.io/#organization",
+        "name": "Jotbit Labs",
+        "url": "https://jotbit-labs.github.io/",
+        "logo": "https://jotbit-labs.github.io/assets/jotbit-logo-512.png",
+        "sameAs": ["https://github.com/Jotbit-Labs"]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/jotbit.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Jotbit home">
+      <img src="assets/jotbit-logo.svg" alt="Jotbit logo" width="32" height="32">
+      <span>Jotbit</span>
+    </a>
+    <nav>
+      <a href="#download">Download</a>
+      <a href="#features">Features</a>
+      <a href="https://github.com/Jotbit-Labs">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1><span class="hero-name">Jotbit:</span> Jot down tasks, organize priorities, and track habits.</h1>
+        <p class="lead">
+          Jotbit puts your week planner, to-do list and habit tracker on one simple board.
+          Plan in 30 minute slots, pin it to your desktop and watch your life tree grow.
+        </p>
+        <a class="btn btn-primary" href="#download">Get Jotbit</a>
+      </div>
+
+      <!-- Illustration of the board: planner, habit tracker, to-do list. -->
+      <div class="board-mock" aria-hidden="true">
+        <div class="mock-planner">
+          <div class="mock-days"><span>Mon</span><span class="today">Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div>
+          <div class="mock-grid">
+            <i class="blk" style="--c:1; --r:2; --h:2"></i>
+            <i class="blk" style="--c:2; --r:1; --h:3"></i>
+            <i class="blk done" style="--c:3; --r:4; --h:2"></i>
+            <i class="blk" style="--c:4; --r:2; --h:1"></i>
+            <i class="blk" style="--c:5; --r:3; --h:3"></i>
+            <i class="now"></i>
+          </div>
+          <div class="mock-habits">
+            <b></b><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b class="on"></b><b class="on"></b>
+            <b class="on"></b><b></b><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b></b>
+          </div>
+        </div>
+        <div class="mock-todo">
+          <div class="todo-item open"><em></em><span></span></div>
+          <div class="todo-sub"><em></em><span></span></div>
+          <div class="todo-sub"><em class="tick"></em><span class="struck"></span></div>
+          <div class="todo-item"><em></em><span></span></div>
+          <div class="todo-item"><em class="tick"></em><span class="struck"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="downloads">
+      <h2>Download Jotbit</h2>
+      <p class="section-lead">Pick your device. Platforms marked "Coming soon" are on the way.</p>
+      <div class="download-grid">
+        <article class="dl-card" data-platform="mac">
+          <h3>Mac</h3>
+          <p class="dl-note">macOS 12 or later</p>
+          <p class="dl-hint" hidden>Recommended for this device</p>
+          <a class="btn" data-download aria-disabled="true">Coming soon</a>
+        </article>
+        <article class="dl-card" data-platform="windows">
+          <h3>Windows</h3>
+          <p class="dl-note">Windows 10 or later</p>
+          <p class="dl-hint" hidden>Recommended for this device</p>
+          <a class="btn" data-download aria-disabled="true">Coming soon</a>
+        </article>
+        <article class="dl-card" data-platform="android">
+          <h3>Android</h3>
+          <p class="dl-note">Google Play</p>
+          <p class="dl-hint" hidden>Recommended for this device</p>
+          <a class="btn" data-download aria-disabled="true">Coming soon</a>
+        </article>
+        <article class="dl-card" data-platform="ios">
+          <h3>iPhone and iPad</h3>
+          <p class="dl-note">App Store</p>
+          <p class="dl-hint" hidden>Recommended for this device</p>
+          <a class="btn" data-download aria-disabled="true">Coming soon</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>One board for your day</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>Week planner</h3>
+          <p>Drag tasks onto 30 minute slots. Scroll through the week, zoom out to see the whole day.</p>
+        </article>
+        <article>
+          <h3>To-do list</h3>
+          <p>Break tasks into subtasks, give each one its time and a deadline. Done items get a line through them.</p>
+        </article>
+        <article>
+          <h3>Habit tracker</h3>
+          <p>A simple month grid. One click a day keeps the streak going.</p>
+        </article>
+        <article>
+          <h3>Pinned to your desktop</h3>
+          <p>Pin the board behind your windows on the Mac. It stays on every desktop, ready when you need it.</p>
+        </article>
+        <article>
+          <h3>Life tree</h3>
+          <p>A small tree that grows when you tick habits and finish what you planned, and dries out when tasks go overdue.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Jotbit Labs</p>
+    <p>
+      Project licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a>.
+    </p>
+    <p><a href="https://github.com/Jotbit-Labs">github.com/Jotbit-Labs</a></p>
+  </footer>
+
+  <script src="assets/jotbit.js" defer></script>
+</body>
+</html>
